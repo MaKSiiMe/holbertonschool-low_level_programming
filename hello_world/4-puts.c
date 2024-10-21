@@ -1,3 +1,8 @@
 #include <stdio.h>
-puts(Programming is like building a multilingual puzzle);
+
+int pust(const char *Programming is like building a multilingual puzzle);
+
+int main(){
+	puts();
 return(0);
+}
