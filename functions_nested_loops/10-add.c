@@ -2,8 +2,9 @@
 
 /**
  * add - Entry point
- * @: character to check
- * Return:
+ * @a : The first integer to add.
+ * @b : The second integer to add.
+ * Return: a + b
  */
 
 int add(int a, int b)
