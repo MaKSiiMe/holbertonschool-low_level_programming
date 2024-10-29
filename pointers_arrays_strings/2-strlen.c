@@ -3,8 +3,8 @@
 
 /**
  * _strlen - Entry point
- * @s: varaible to check
- * return: l
+ * @s : char of string
+ * Return: Always 1 (True) or 0 (False)
  */
 
 int _strlen(char *s)
