@@ -2,9 +2,9 @@
 
 /**
  * *_strstr - Entry point
- * @s: pointer
- * @c: string
- * Return: @dest
+ * @haystack: string
+ * @needle: string
+ * Return: @haystack + i or '\0'
  */
 
 char *_strstr(char *haystack, char *needle)
