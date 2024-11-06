@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
- * is_prime_number - Entry point
- * @n: number
- * Return: 1 or 0 or -1
- */
-
-int is_prime_number(int n)
-{
-	return (_prime_number(n, 2));
-}
-
-/**
  * _prime_number - Entry point
  * @n: number
  * @i: number
@@ -27,4 +16,15 @@ int _prime_number(int n, int i)
 	else if (n % i == 0)
 		return (0);
 	return (_prime_number(n, i + 1));
+}
+
+/**
+ * is_prime_number - Entry point
+ * @n: number
+ * Return: 1 or 0 or -1
+ */
+
+int is_prime_number(int n)
+{
+	return (_prime_number(n, 2));
 }
