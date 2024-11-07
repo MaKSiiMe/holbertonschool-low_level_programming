@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point
- * @argc: 
- * @argv: 
+ * @argc: size of argv
+ * @argv: array of size argc
  * Return: argv
  */
 
