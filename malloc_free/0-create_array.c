@@ -6,7 +6,7 @@
  * *create_array - Entry point
  * @size: size of array
  * @c: number
- * Return: argv
+ * Return: arra
  */
 
 char *create_array(unsigned int size, char c)
@@ -15,12 +15,8 @@ char *create_array(unsigned int size, char c)
 	char *array = malloc(size * sizeof(char));
 
 	if (size == 0 || array == 0)
-	{
 		return ('\0');
-	}
 	for (; i < size; i++)
-	{
 		array[i] = c;
-	}
 	return (array);
 }
