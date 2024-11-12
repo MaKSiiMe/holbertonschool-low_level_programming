@@ -4,8 +4,8 @@
 
 /**
  * **alloc_grid - Entry point
- * @widht: largeur
- * @weight: longueur
+ * @width: largeur
+ * @height: longueur
  * Return: array
  */
 
