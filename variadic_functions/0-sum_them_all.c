@@ -1,13 +1,11 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 
 /**
- * main - Entry point
- * @argc: size of argv
- * @argv: array of size argc
- * Return: argv
+ * sum_them_all - Entry point
+ * @n: number of parameters
+ * @...: parameters to sum
+ * Return: result or 0
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -20,8 +18,10 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	va_start(args, n);
-		for (; i < n; i++)
-			result += va_arg(args, int);
+	
+	for (; i < n; i++)
+		result += va_arg(args, int);
+	
 	va_end(args);
 
 	return (result);
