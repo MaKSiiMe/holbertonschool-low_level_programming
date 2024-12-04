@@ -1,9 +1,12 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
- * @h: pointer to the first node
- * Return: the number of node
+ * add_node_end - Entry point
+ * @head: pointer to the first node
+ * @str: string
+ * * Return: the address of the new element or NULL
  */
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -14,18 +17,19 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node == NULL)
 	{
 		free(new_node);
-		return(NULL);
+		return (NULL);
 	}
 
 	new_node->str = strdup(str);
 	new_node->len = strlen(str);
 	new_node->next = NULL;
-	
+
 	if (*head)
 	{
 		while (last_node->next != NULL)
 			last_node = last_node->next;
-		return(new_node);
+		last_node->next = new_node;
+		return (new_node);
 	}
 
 	*head = new_node;

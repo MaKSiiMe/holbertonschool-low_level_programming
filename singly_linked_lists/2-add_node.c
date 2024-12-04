@@ -1,9 +1,11 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - Entry point
  * @head: pointer to the first node
- * @str:
+ * @str: string
  * Return: the address of new element or NULL
  */
 
@@ -14,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node == NULL)
 	{
 		free(new_node);
-		return(NULL);
+		return (NULL);
 	}
 
 	new_node->str = strdup(str);
@@ -22,5 +24,5 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->next = *head;
 	*head = new_node;
 
-	return(*head);
+	return (*head);
 }
